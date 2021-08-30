@@ -1,0 +1,51 @@
+.footerNav{
+    display: flex;
+    background-color: var(--ltgrey);
+    justify-content: center;
+}
+
+.footerNavContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    max-width: 900px;
+}
+
+.footerNavBlock{
+    padding: 1rem;
+}
+
+.footerContactBlock{
+    display: flex;
+    padding: 1rem;
+}
+
+.headshot{
+    display: block;
+    width: 7rem;
+    border-radius: 50%;
+    margin-left: 2rem;
+    box-shadow: 3px 1px var(--green);
+}
+
+.subFooter{
+    background-color: var(--grey);
+    color: white;
+    font-size: .75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+}
+
+.dba{
+    font-weight: 300;
+    color: white;
+    margin-top: .5rem;
+    font-size: .9rem;
+}
+
+.dev{
+    font-size: .7rem;
+    opacity: .6;
+}

@@ -1,0 +1,41 @@
+.headLogoContainer a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headLogo{
+    width: 30%;
+    max-width: 20rem;
+    min-width: 13rem;
+    margin: auto;
+}
+
+.navLinkList{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    max-width: 900px;
+}
+
+
+
+.navLinkListContainer{
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    background-color: var(--grey);
+}
+
+.navLinkList a:hover{
+    border-bottom: 5px solid transparent;
+    border-image: var(--fade);
+    border-image-slice: 1;
+    color: white;
+}
+
+.selected{
+    color: var(--mainblue);
+    font-weight: 600;
+    pointer-events: none;
+}
