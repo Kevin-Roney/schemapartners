@@ -68,8 +68,12 @@
 }
 
 @media (max-width: 600px) {
-  .grid {
-    width: 100%;
+  .whyContainer {
     flex-direction: column;
+    align-content: center;
+    gap: 1rem;
+  }
+  .whys{
+    max-width: 100%;
   }
 }
