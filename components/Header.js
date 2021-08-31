@@ -1,8 +1,15 @@
 import styles from '../styles/Header.module.css'
-import Image from 'next/image'
+import { useRouter } from "next/router"
 import Link from 'next/link'
 
 export default function Header() {
+    const router = useRouter();
+    const checkbox = document.querySelector('#checkbox');
+
+    const handleMenuClick = () => {
+        checkbox.checked = false;
+    }
+
     return (
         <header>
             <div className={styles.headLogoContainer}>
@@ -20,10 +27,18 @@ export default function Header() {
                         <img src='/Close.svg' alt='close icon' className={styles.menuClose} />
                     </label>
 
-                    <h4 className={styles.selected}><Link href='/'>home</Link></h4>
-                    <h4><Link href='#'>services</Link></h4>
-                    <h4><Link href='#'>about</Link></h4>
-                    <h4><Link href='#'>contact</Link></h4>
+                    <h4 onClick={handleMenuClick}
+                        className={router.asPath === '/' ? styles.selected : styles.std}>
+                        <Link href='/'>home</Link></h4>
+                    <h4 onClick={handleMenuClick}
+                        className={router.asPath === '/Services' ? styles.selected : styles.std}>
+                        <Link href='/Services'>services</Link></h4>
+                    <h4 onClick={handleMenuClick}
+                        className={router.asPath === '/About' ? styles.selected : styles.std}>
+                        <Link href='/About'>about</Link></h4>
+                    <h4 onClick={handleMenuClick}
+                        className={router.asPath === '/Contact' ? styles.selected : styles.std}>
+                        <Link href='/Contact'>contact</Link></h4>
                 </nav>
             </div>
         </header>
