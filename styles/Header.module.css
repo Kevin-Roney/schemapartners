@@ -22,7 +22,7 @@
     cursor: pointer;
 }
 
-.menuClose, .navCheckbox, .menuOpen{
+.menuClose, .navCheckbox, .menuOpen, .navToggle{
     display: none;
 }
 
@@ -61,12 +61,15 @@
         width: 90%;
     }
 
-    .navLinkList > h4 {
-        display: none;
-        padding: 5.5vh 0rem;
+    .menuOpen, .navToggle{
+        display: block;
     }
 
-    .menuOpen,
+    .navLinkList > h4 {
+        display: none;
+        padding: 5vh 0rem;
+    }
+
     .navCheckbox:checked ~ h4,
     .navCheckbox:checked ~ .navToggle .menuClose{
         display: block;
