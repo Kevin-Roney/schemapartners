@@ -18,7 +18,21 @@
     max-width: 900px;
 }
 
+.navLinkList .navToggle{
+    cursor: pointer;
+}
 
+.menuClose, .navCheckbox, .menuOpen{
+    display: none;
+}
+
+.menuOpen, .menuClose{
+    position: relative;
+    left: 40vw;
+    margin: .2rem 0rem;
+    width: 30px;
+    height: 30px;
+}
 
 .navLinkListContainer{
     display: flex;
@@ -28,7 +42,7 @@
 }
 
 .navLinkList a:hover{
-    border-bottom: 5px solid transparent;
+    border-bottom: 3px solid transparent;
     border-image: var(--fade);
     border-image-slice: 1;
     color: white;
@@ -39,3 +53,32 @@
     font-weight: 600;
     pointer-events: none;
 }
+
+@media (max-width: 600px) {
+    .navLinkList{
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .menuOpen{
+        display: block;
+    }
+
+    .navLinkList > h4 {
+        display: none;
+    }
+
+    .navCheckbox:checked ~ h4{
+        display: block;
+    }
+
+    .navCheckbox:checked ~ .navToggle .menuClose{
+        display: block;
+    }
+
+    .navCheckbox:checked ~ .navToggle .menuOpen{
+        display: none;
+    }
+
+  }
