@@ -12,12 +12,12 @@
 }
 
 .footerNavBlock{
-    padding: 1rem;
+    padding: 1rem 0rem;
 }
 
 .footerContactBlock{
     display: flex;
-    padding: 1rem;
+    padding: 1rem 0rem;
 }
 
 .headshot{
@@ -49,3 +49,27 @@
     font-size: .7rem;
     opacity: .6;
 }
+
+@media (max-width: 700px) {
+    .footerNavContainer{
+        flex-wrap: wrap;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .headshot{
+        display: none;
+    }
+
+    .footerNavBlock, .footerContactBlock{
+        padding: 1rem;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .footerNavBlock li,
+    .footerContactBlock li{
+        display: none;
+    }
+  }
