@@ -67,3 +67,14 @@ p{
 footer{
   width: 100%;
 }
+
+@media (max-width: 600px) {
+  header{
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  main{
+    padding-top: 4.8rem;
+  }
+}
