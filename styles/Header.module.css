@@ -61,18 +61,13 @@
         width: 90%;
     }
 
-    .menuOpen{
-        display: block;
-    }
-
     .navLinkList > h4 {
         display: none;
+        padding: 5.5vh 0rem;
     }
 
-    .navCheckbox:checked ~ h4{
-        display: block;
-    }
-
+    .menuOpen,
+    .navCheckbox:checked ~ h4,
     .navCheckbox:checked ~ .navToggle .menuClose{
         display: block;
     }
@@ -80,5 +75,4 @@
     .navCheckbox:checked ~ .navToggle .menuOpen{
         display: none;
     }
-
   }
