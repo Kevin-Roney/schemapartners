@@ -9,7 +9,7 @@ export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const handleMenuClick = () => {
-        setMenuOpen(prev => !prev);
+        setMenuOpen(false);
     }
 
     return (
@@ -17,7 +17,11 @@ export default function Header() {
             <div className={styles.headLogoContainer}>
                 <Link href='/'>
                     <a>
-                        <img className={styles.headLogo} src='/SchemaPartners-MainLogo.svg' alt='Schema Partners Logo' />
+                        <img
+                            onClick={handleMenuClick}
+                            className={styles.headLogo}
+                            src='/SchemaPartners-MainLogo.svg'
+                            alt='Schema Partners Logo' />
                     </a>
                 </Link>
             </div>
@@ -28,7 +32,8 @@ export default function Header() {
                         className={styles.navCheckbox}
                         defaultChecked='false'
                         checked={menuOpen} />
-                    <label htmlFor='checkbox' className={styles.navToggle} onClick={handleMenuClick}>
+                    <label htmlFor='checkbox' className={styles.navToggle}
+                        onClick={() => setMenuOpen(prev => !prev)}>
                         <img src='/Burger.svg' alt='expand menu icon' className={styles.menuOpen} />
                         <img src='/Close.svg' alt='close icon' className={styles.menuClose} />
                     </label>

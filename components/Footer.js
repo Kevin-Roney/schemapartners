@@ -1,4 +1,5 @@
 import styles from '../styles/Footer.module.css'
+import Link from 'next/link'
 
 export default function Footer() {
     return (
@@ -6,7 +7,7 @@ export default function Footer() {
             <div className={styles.footerNav}>
                 <div className={styles.footerNavContainer}>
                     <div className={styles.footerNavBlock}>
-                        <h3>SERVICES</h3>
+                        <h3> <Link href='/Services'>SERVICES</Link></h3>
                         <ul>
                             <li>Sequi nesciunt 1</li>
                             <li>Sequi nesciunt 2</li>
@@ -15,7 +16,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className={styles.footerNavBlock}>
-                        <h3>ABOUT</h3>
+                        <h3><Link href='/About'>ABOUT</Link></h3>
                         <ul>
                             <li>Sequi nesciunt 1</li>
                             <li>Sequi nesciunt 2</li>
@@ -25,7 +26,7 @@ export default function Footer() {
                     </div>
                     <div className={styles.footerContactBlock}>
                         <div>
-                            <h3>CONTACT</h3>
+                            <h3><Link href='/Contact'>CONTACT</Link></h3>
                             <ul>
                                 <li><b>Edward Roney</b></li>
                                 <li>000.000.0000</li>
