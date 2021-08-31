@@ -1,13 +1,15 @@
 import styles from '../styles/Header.module.css'
+import { useState } from 'react'
 import { useRouter } from "next/router"
 import Link from 'next/link'
 
 export default function Header() {
     const router = useRouter();
-    const checkbox = document.querySelector('#checkbox');
+
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const handleMenuClick = () => {
-        checkbox.checked = false;
+        setMenuOpen(prev => !prev);
     }
 
     return (
@@ -21,8 +23,12 @@ export default function Header() {
             </div>
             <div className={styles.navLinkListContainer}>
                 <nav className={styles.navLinkList}>
-                    <input type='checkbox' id='checkbox' className={styles.navCheckbox} />
-                    <label htmlFor='checkbox' className={styles.navToggle}>
+                    <input
+                        type='checkbox' id='checkbox'
+                        className={styles.navCheckbox}
+                        defaultChecked='false'
+                        checked={menuOpen} />
+                    <label htmlFor='checkbox' className={styles.navToggle} onClick={handleMenuClick}>
                         <img src='/Burger.svg' alt='expand menu icon' className={styles.menuOpen} />
                         <img src='/Close.svg' alt='close icon' className={styles.menuClose} />
                     </label>
