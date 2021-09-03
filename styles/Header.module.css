@@ -68,7 +68,7 @@
 
     .navLinkList > h4 {
         display: none;
-        padding: 5vh 0rem;
+        padding: 5.2vh 0rem;
     }
 
     .navCheckbox:checked ~ h4,
@@ -77,6 +77,10 @@
     }
 
     .navCheckbox:checked ~ .navToggle .menuOpen{
+        display: none;
+    }
+
+    .dev{
         display: none;
     }
   }
