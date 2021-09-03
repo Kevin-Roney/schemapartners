@@ -68,7 +68,8 @@
 
     .navLinkList > h4 {
         display: none;
-        padding: 5.2vh 0rem;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
     }
 
     .navCheckbox:checked ~ h4,
