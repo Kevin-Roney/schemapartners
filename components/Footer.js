@@ -40,7 +40,7 @@ export default function Footer() {
             </div>
             <div className={styles.subFooter}>
                 <h3 className={styles.dba}>Edward Roney Consulting LLC.</h3>
-                <p className={styles.dev}>Wed Design - <a href='https://www.katrinacloyd.com/' rel='noreferrer' target='_blank'>Katrina Cloyd</a>, 2021</p>
+                <p className={styles.dev}>Web Design - <a href='https://www.katrinacloyd.com/' rel='noreferrer' target='_blank'>Katrina Cloyd</a>, 2021</p>
             </div>
         </footer>
     )

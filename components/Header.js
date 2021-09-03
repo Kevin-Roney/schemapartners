@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from '../styles/Header.module.css'
 import { useState } from 'react'
 import { useRouter } from "next/router"
