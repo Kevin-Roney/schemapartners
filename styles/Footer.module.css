@@ -67,6 +67,12 @@
     }
   }
 
+  @media (max-width: 600px) {
+    .dev{
+        display: none;
+    }
+  }
+
   @media (max-width: 430px) {
     .footerNavBlock li,
     .footerContactBlock li{
