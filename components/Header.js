@@ -26,7 +26,7 @@ export default function Header() {
                     </a>
                 </Link>
             </div>
-            <div className={styles.navLinkListContainer}>
+            <div className={menuOpen ? [styles.navLinkListContainer, styles.navOpen].join(' ') : styles.navLinkListContainer}>
                 <nav className={styles.navLinkList}>
                     <input
                         type='checkbox' id='checkbox'
