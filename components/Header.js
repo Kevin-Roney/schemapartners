@@ -14,7 +14,7 @@ export default function Header() {
     }
 
     return (
-        <header>
+        <header className={menuOpen ? styles.headerOpen : styles.headerClose}>
             <div className={styles.headLogoContainer}>
                 <Link href='/'>
                     <a>
