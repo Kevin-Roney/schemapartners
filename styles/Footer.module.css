@@ -18,6 +18,7 @@
 .footerContactBlock{
     display: flex;
     padding: 1rem 0rem;
+    align-items: flex-start;
 }
 
 .headshot{
