@@ -1,3 +1,10 @@
+.page{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--ltblue);
+}
+
 .backgroundImg{
   width: 100vw;
   background-image: url('/backgroundImg.jpg');
@@ -47,7 +54,7 @@
 }
 
 .expSection{
-  width: 100%;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;  
