@@ -42,6 +42,10 @@
     background-color: var(--grey);
 }
 
+.headerOpen{
+    height: 100vh;
+}
+
 .navOpen{
     flex-grow: 1;
 }
@@ -80,10 +84,6 @@
     }
 
     .navCheckbox:checked ~ .navToggle .menuOpen{
-        display: none;
-    }
-
-    .dev{
         display: none;
     }
   }

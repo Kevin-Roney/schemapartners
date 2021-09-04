@@ -69,18 +69,21 @@ footer{
   width: 100%;
 }
 
+main{
+  flex-grow: 1;
+}
 
 @media (max-width: 600px) {
   header{
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
   }
+  
   main{
-    padding-top: 4.8rem;
+    padding-top: 9rem;
   }
 
   h4:nth-child(6){
