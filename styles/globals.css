@@ -33,7 +33,7 @@ a:hover{
   color: var(--mainblue);
 }
 
-a:focus{
+:focus-visible{
   outline-offset: 2px;
   outline: 2px solid var(--green);
 }
@@ -92,6 +92,6 @@ main{
   }
 
   h4:nth-child(6){
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
   }
 }
