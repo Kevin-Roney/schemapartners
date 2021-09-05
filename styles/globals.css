@@ -33,6 +33,11 @@ a:hover{
   color: var(--mainblue);
 }
 
+a:focus{
+  outline-offset: 4px;
+  outline: 2px solid var(--green);
+}
+
 ul {
   list-style-type: none;
   padding: 0;
