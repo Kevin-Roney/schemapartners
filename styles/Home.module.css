@@ -16,21 +16,106 @@
   align-items: center;  
 }
 
-.services{
-  background-color: rgba(255, 255, 255, .5);
+.homeSectionWrapper{
+  display: flex;
   width: 75%;
   max-width: 900px;
-  padding: 1.2rem;
   margin: 2rem;
+}
+
+.aboutBlurb{
+  background-color: rgba(255, 255, 255, .65);
+  padding: 1.2rem;
+  margin-right: 1.5rem;
+}
+
+.prep{
+  background-color: rgba(24, 112, 184, .8);
+  padding: 1.2rem;
   font-size: .9rem;
 }
+
+.taglinesWrapper{
+  width: 100vw;
+  background-color: var(--ltgrey);
+  display: flex;
+  justify-content: center;
+}
+
+.taglines{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  width: 75%;
+  max-width: 900px;
+  padding: 1rem;
+}
+
+.taglines h2{
+  font-weight: 300;
+  margin: 0;
+  color: var(--mainblue);
+  padding-right: 1rem;
+}
+
+.taglines h3{
+  color: white;
+  font-weight: 300;
+  padding-left: 2.5rem;
+  font-size: 1.1rem;
+  border-top: 1px solid var(--grey);
+}
+
+
+.valuationsWrapper{
+  width: 100%;
+  background-color: var(--ltblue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.valuations{
+  width: 75%;
+  max-width: 900px;
+  margin: 1.5rem 0;
+}
+
+.valuations h3{
+  color: black; 
+}
+
+
+/* need to fix how this is styling 
+the column flow */
+.valuations ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 30%;
+  
+  height: 10rem;
+  margin-left: 3rem;
+  padding: 1rem;
+}
+
+
+
 
 .whySection{
   width: 100%;
   background-color: var(--grey);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;  
+  padding-top: 1.5rem;
+}
+
+.whyHeading{
+  width: 75%;
+  max-width: 900px;
 }
 
 .whyContainer{
@@ -75,6 +160,17 @@
 }
 
 @media (max-width: 600px) {
+  .homeSectionWrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutBlurb{
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
   .whyContainer {
     flex-direction: column;
     align-content: center;

@@ -26,6 +26,10 @@ export default function Header() {
                     </a>
                 </Link>
             </div>
+            <div className={styles.subhead}>
+                <h2>Business Valuations</h2>
+                <h3>without complications</h3>
+            </div>
             <div className={menuOpen ? [styles.navLinkListContainer, styles.navOpen].join(' ') : styles.navLinkListContainer}>
                 <nav className={styles.navLinkList}>
                     <input
