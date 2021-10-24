@@ -29,10 +29,17 @@
   margin-right: 1.5rem;
 }
 
+.aboutBlurb span{
+  color: var(--mainblue);
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
 .prep{
-  background-color: rgba(24, 112, 184, .8);
+  background-color: rgba(24, 112, 184, .65);
   padding: 1.2rem;
   font-size: .9rem;
+  color: var(--ltgrey);
 }
 
 .taglinesWrapper{
@@ -87,6 +94,62 @@
 }
 
 
+.valuationsSection{
+  width: 100%;
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  padding-top: 1.5rem;
+  border-bottom: 3px solid var(--mainblue);
+}
+
+.valuationsHead{
+  width: 75%;
+  max-width: 900px;
+}
+
+.valuationsHead > p {
+  margin: 0;
+  font-size: .9rem;
+}
+
+.ulContainer{
+  width: 75%;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  margin-top: 1rem;
+}
+
+.items, .allItems{
+  background-color: rgba(255, 255, 255, .5);
+  max-width: 30%;
+  padding: 1.2rem;
+  padding-left: 1.75rem;
+  font-size: .75rem;
+}
+
+.items li::before,
+.allItems li::before {
+  content: "\2192";
+  color: var(--mainblue);
+  margin-left: -.5rem;
+  padding-right: .5rem;
+}
+
+.allItems{
+  display: none;
+  visibility: hidden;
+}
+
+.itemHeader{
+  color: var(--mainblue);
+  font-weight: 600;
+}
+
 /* need to fix how this is styling 
 the column flow */
 .valuations ul{
@@ -98,65 +161,6 @@ the column flow */
   height: 10rem;
   margin-left: 3rem;
   padding: 1rem;
-}
-
-
-
-
-.whySection{
-  width: 100%;
-  background-color: var(--grey);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;  
-  padding-top: 1.5rem;
-}
-
-.whyHeading{
-  width: 75%;
-  max-width: 900px;
-}
-
-.whyContainer{
-  width: 75%;
-  max-width: 900px;
-  display: flex;
-  justify-content: space-between;
-  margin: 2rem;
-}
-
-.whys{
-  background-color: rgba(255, 255, 255, .5);
-  max-width: 30%;
-  padding: 1.2rem;
-  font-size: .75rem;
-}
-
-.whyHeader{
-  color: var(--mainblue);
-  font-weight: 600;
-}
-
-.expSection{
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-}
-
-.exp{
-  background-color: var(--mainblue);
-  color: var(--ltgrey);
-  width: 75%;
-  max-width: 900px;
-  padding: 1.2rem;
-  margin: 2rem;
-  font-size: .9rem;
-}
-
-.expHeader{
-  color: white;
 }
 
 @media (max-width: 600px) {
@@ -171,12 +175,23 @@ the column flow */
     margin-top: 1.5rem;
   }
 
-  .whyContainer {
+  .ulContainer {
     flex-direction: column;
     align-content: center;
     gap: 1rem;
   }
-  .whys{
+
+  .items{
+    display: none;
+    visibility: hidden;
+  }
+  
+  .allItems{
     max-width: 100%;
+  }
+
+  .allItems{
+    display: block;
+    visibility: visible;
   }
 }

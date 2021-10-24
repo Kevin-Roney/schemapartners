@@ -30,8 +30,8 @@ export default function Footer() {
                             <ul>
                                 <li><b>Edward Roney</b></li>
                                 <li>000.000.0000</li>
-                                <li> <a href='mailto: katrina.cloyd@yahoo.com'>Email</a></li>
-                                <li><a href='https://www.linkedin.com/in/ed-roney-0a750b6/' rel='noreferrer' target='_blank'>linkedIn</a></li>
+                                <li className={styles.contactLinks}><a href='mailto: katrina.cloyd@yahoo.com'>Email</a></li>
+                                <li className={styles.contactLinks}><a href='https://www.linkedin.com/in/ed-roney-0a750b6/' rel='noreferrer' target='_blank'>linkedIn</a></li>
                             </ul>
                         </div>
                         <img className={styles.headshot} src='/EdRoneyHeadshot.jpeg' alt='Edward Roney headshot' />
