@@ -48,6 +48,15 @@ li:before {
   content: "\200B";
 }
 
+blockquote{
+  font-style: italic;
+  font-size: .85rem;
+}
+
+blockquote p {
+  text-align: right;
+}
+
 
 h3{
   font-weight: 600;

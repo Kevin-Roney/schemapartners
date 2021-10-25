@@ -1,11 +1,17 @@
-import styles from '../styles/Home.module.css'
+import styles from '../styles/About.module.css'
 
 export default function About() {
     return (
-        <main>
-            <section className={styles.backgroundImg} >
-                <div className={styles.services}>
-                    <b>About</b> unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+        <main className={styles.about}>
+            <section className={styles.aboutContainer} >
+                <div>
+                    <img className={styles.headshot} src='/EdRoneyHeadshot.jpeg' alt='Edward Roney headshot' />
+                    <h2>Edward Roney, CVA</h2>
+                    <h3>Managing Partner</h3>
+                    <p>Ed is an accomplished M&A leader with the rare experience that comes from planning and executing dozens of successfully closed transactions. He has spent the past ten years working with Northwest companies as an independent M&A advisor and project manager helping businesses create value through combinations, representing both buyers and sellers.</p>
+                    <p>Over this time, Ed has honed a talent for capturing not only the fair value of a business, but also the story behind the value that resonates with buyers and sellers alike. Telling the story correctly becomes especially important in litigation and other disputes.</p>
+                    <p>Prior to starting Schema Partners, Ed was the Director of Corporate Development at Tektronix, closing transactions with NYSE-traded multinationals as well as with pre-revenue startups in high technology, and all types in between. When Tektronix itself was acquired, Ed transitioned to the acquiring company, Danaher, to close six more acquisitions in the following years. Danaher is a recognized world leader in growth via acquisitions, with well-studied best practices in M&A that Ed continues to draw from today.</p>
+                    <p>Ed is accredited as a Certified Valuation Analyst from the National Association of Certified Valuators and Analysts (NACVA).</p>
                 </div>
             </section>
         </main>
