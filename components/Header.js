@@ -35,8 +35,8 @@ export default function Header() {
                     <input
                         type='checkbox' id='checkbox'
                         className={styles.navCheckbox}
-                        defaultChecked='false'
-                        checked={menuOpen} />
+                        checked={menuOpen}
+                        readOnly />
                     <label htmlFor='checkbox' className={styles.navToggle}
                         onClick={() => setMenuOpen(prev => !prev)}>
                         <img src='/Burger.svg' alt='expand menu icon' className={styles.menuOpen} />

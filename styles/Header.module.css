@@ -1,3 +1,12 @@
+.headerClose{
+    z-index: 1000;
+}
+
+.headerOpen{
+    height: 100vh;
+    z-index: 1000;
+}
+
 .headLogoContainer a{
     display: flex;
     flex-direction: column;
@@ -63,10 +72,6 @@
     justify-content: space-evenly;
     text-transform: uppercase;
     background-color: var(--grey);
-}
-
-.headerOpen{
-    height: 100vh;
 }
 
 .navOpen{

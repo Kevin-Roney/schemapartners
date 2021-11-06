@@ -9,19 +9,18 @@ export default function Footer() {
                     <div className={styles.footerNavBlock}>
                         <h3> <Link href='/Services'>SERVICES</Link></h3>
                         <ul>
-                            <li>Sequi nesciunt 1</li>
-                            <li>Sequi nesciunt 2</li>
-                            <li>Sequi nesciunt 3</li>
-                            <li>Sequi nesciunt 4</li>
+                            <li>Valuations</li>
+                            <li>Aquisition</li>
+                            <li>Assessment</li>
+                            <li>Market Research</li>
                         </ul>
                     </div>
                     <div className={styles.footerNavBlock}>
                         <h3><Link href='/About'>ABOUT</Link></h3>
                         <ul>
-                            <li>Sequi nesciunt 1</li>
-                            <li>Sequi nesciunt 2</li>
-                            <li>Sequi nesciunt 3</li>
-                            <li>Sequi nesciunt 4</li>
+                            <li>Certified Valuation Analyst</li>
+                            <li>M&A Advisor</li>
+                            <li>10+ Years of Experience</li>
                         </ul>
                     </div>
                     <div className={styles.footerContactBlock}>
@@ -29,8 +28,7 @@ export default function Footer() {
                             <h3><Link href='/Contact'>CONTACT</Link></h3>
                             <ul>
                                 <li><b>Edward Roney</b></li>
-                                <li>000.000.0000</li>
-                                <li className={styles.contactLinks}><a href='mailto: katrina.cloyd@yahoo.com'>Email</a></li>
+                                <li className={styles.contactLinks}><a href='mailto: edward@schemapartners.com'>Email</a></li>
                                 <li className={styles.contactLinks}><a href='https://www.linkedin.com/in/ed-roney-0a750b6/' rel='noreferrer' target='_blank'>linkedIn</a></li>
                             </ul>
                         </div>

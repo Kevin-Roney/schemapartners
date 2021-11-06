@@ -1,18 +1,63 @@
-import styles from '../styles/Home.module.css'
+import { useState } from 'react';
+import { useRouter } from 'next/router';
+import styles from '../styles/Contact.module.css'
 
 export default function Contact() {
+    const router = useRouter();
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [industry, setIndustry] = useState('');
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        const data = {
+            name,
+            email,
+            industry,
+            message,
+        };
+        fetch('/api/contact', {
+            method: 'post',
+            body: JSON.stringify(data),
+        })
+            .then(router.push('/Thanks'));
+    };
     return (
-        <main >
-            <section className={styles.backgroundImg} >
-                <div className={styles.services}>
-                    <b>Hello</b> unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
-                </div>
-            </section>
-            <section className={styles.whySection}>
-                <div className={styles.whyContainer}>
-                    <div ><span className={styles.whyHeader}>Contact</span> unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</div>
-                </div>
-            </section>
+        <main className={styles.root}>
+            <h2 className={styles.heading}>
+                Request a free consultation.
+            </h2>
+            <form onSubmit={handleSubmit} className={styles.form}>
+                <label htmlFor="name">Name:</label>
+                <input
+                    id="name"
+                    type="text"
+                    onChange={e => setName(e.target.value)}
+                />
+                <label htmlFor="email">Email:</label>
+                <input
+                    id="email"
+                    type="email"
+                    onChange={e => setEmail(e.target.value)}
+                />
+                <label htmlFor="industry">Industry:</label>
+                <input
+                    id="industry"
+                    type="text"
+                    onChange={e => setIndustry(e.target.value)}
+                />
+                <label htmlFor="message">Message:</label>
+                <textarea
+                    id="message"
+                    type="text"
+                    rows="8"
+                    onChange={e => setMessage(e.target.value)}
+                />
+                <button type="submit">Send</button>
+            </form>
+
+
         </main>
     )
 }

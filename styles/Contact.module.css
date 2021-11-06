@@ -1,0 +1,30 @@
+.root{    
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;  
+}
+
+.heading{
+    color: var(--mainblue);
+}
+
+.paragraph{
+    margin-bottom: 8rem;
+}
+
+.form{
+    width: 75%;
+    max-width: 900px;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media (max-width: 600px) {
+    .root{
+        margin-top: 1.75rem;
+    }
+}

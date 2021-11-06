@@ -12,6 +12,9 @@ A Certified Value Analyst offering Mergers and Aquisitions Advising.
 - [X] Set up About Page 
 - [X] Set Up Services Page
 - [X] Set up Contact Page (using next email api)
-- [ ] Fix floating footer on short content pages
-- [ ] Get copy in place from client
-- [ ] Set up contact email form (next API) on contact page
+- [X] Fix floating footer on short content pages
+- [X] Get copy in place from client
+- [X] Set up contact email form (next API) on contact page
+- [ ] Incorporate field validations
+- [ ] Style form 
+- [ ] Update email addressed to ed's  (send grid -> settings -> sender authentication)

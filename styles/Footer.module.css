@@ -1,6 +1,6 @@
 .footerNav{
     display: flex;
-    background-color: white;
+    background-color: var(--ltgrey);
     justify-content: center;
 }
 

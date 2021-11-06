@@ -6,7 +6,7 @@ export default function About() {
             <section className={styles.aboutContainer} >
                 <div>
                     <img className={styles.headshot} src='/EdRoneyHeadshot.jpeg' alt='Edward Roney headshot' />
-                    <h2>Edward Roney, CVA</h2>
+                    <h2 className={styles.name}>Edward Roney, CVA</h2>
                     <h3>Managing Partner</h3>
                     <p>Ed is an accomplished M&A leader with the rare experience that comes from planning and executing dozens of successfully closed transactions. He has spent the past ten years working with Northwest companies as an independent M&A advisor and project manager helping businesses create value through combinations, representing both buyers and sellers.</p>
                     <p>Over this time, Ed has honed a talent for capturing not only the fair value of a business, but also the story behind the value that resonates with buyers and sellers alike. Telling the story correctly becomes especially important in litigation and other disputes.</p>
