@@ -24,7 +24,7 @@
   padding: 1.2rem;
 }
 
-.aboutBlurb span, .buySell span{
+.aboutBlurb span{
   color: var(--mainblue);
   font-weight: 900;
   font-size: 1.25rem;
@@ -68,17 +68,6 @@
   font-size: 1.1rem;
   border-top: 1px solid var(--grey);
 }
-
-.valuations{
-  width: 75%;
-  max-width: 900px;
-  margin: 1.5rem 0;
-}
-
-.valuations h3{
-  color: black; 
-}
-
 
 .valuationsSection{
   width: 100%;
@@ -135,14 +124,11 @@
   font-weight: 600;
 }
 
-/* need to fix how this is styling 
-the column flow */
 .valuations ul{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 30%;
-  
   height: 10rem;
   margin-left: 3rem;
   padding: 1rem;
@@ -173,9 +159,6 @@ the column flow */
   
   .allItems{
     max-width: 100%;
-  }
-
-  .allItems{
     display: block;
     visibility: visible;
   }

@@ -1,9 +1,19 @@
 .about{    
     display: flex;
     flex-direction: column;
-    background-color: white;
     justify-content: center;
     align-items: center;  
+}
+
+.about a {
+    padding-right: 1rem;
+    color: var(--ltblue);
+    font-size: .85rem;
+}
+
+.about a:hover {
+    text-decoration: underline;
+    color: var(--green);
 }
 
 .aboutContainer{

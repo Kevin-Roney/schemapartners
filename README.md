@@ -18,3 +18,5 @@ A Certified Value Analyst offering Mergers and Aquisitions Advising.
 - [X] Incorporate field validations
 - [X] Style form 
 - [ ] Update email addressed to ed's  (send grid -> settings -> sender authentication)
+- [ ] A11y check 
+- [ ] Replace this with an actual Readme! 
