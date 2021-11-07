@@ -26,13 +26,17 @@ export default function Header() {
                     </a>
                 </Link>
             </div>
+            <div className={styles.subhead}>
+                <h2>Business Valuations</h2>
+                <h3>without complications</h3>
+            </div>
             <div className={menuOpen ? [styles.navLinkListContainer, styles.navOpen].join(' ') : styles.navLinkListContainer}>
                 <nav className={styles.navLinkList}>
                     <input
                         type='checkbox' id='checkbox'
                         className={styles.navCheckbox}
-                        defaultChecked='false'
-                        checked={menuOpen} />
+                        checked={menuOpen}
+                        readOnly />
                     <label htmlFor='checkbox' className={styles.navToggle}
                         onClick={() => setMenuOpen(prev => !prev)}>
                         <img src='/Burger.svg' alt='expand menu icon' className={styles.menuOpen} />

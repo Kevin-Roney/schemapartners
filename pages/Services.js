@@ -1,13 +1,26 @@
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Services.module.css'
 
 export default function Services() {
     return (
-        <main >
-            <section className={styles.backgroundImg} >
-                <div className={styles.services}>
-                    <b>Services Provided</b> unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? llam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                </div>
-            </section>
+        <main className={styles.root}>
+            <div className={styles.homeSectionWrapper}>
+                <section className={styles.buySell}>
+                    <span className={styles.title}>For Buyers</span>
+                    <hr />
+                    <blockquote>
+                        “Price is what you pay. Value is what you get.”
+                        <p>- Warren Buffet</p>
+                    </blockquote>
+                    <p>Schema Partners offers 20+ years of M&A experience, with billions in deal value, for strategic buyers and investors looking for advice or a virtual corporate development team. We can assist with valuations, market research or due diligence as needed, or manage the acquisition process end-to-end, from target assessment to signed agreements.</p>
+                    <p>Experienced across a broad range of markets, including Technology, Health Services, Insurance and Consumer Products.</p>
+                </section>
+                <section className={styles.buySell}>
+                    <span className={styles.title}>For Sellers</span>
+                    <hr />
+                    <p>You’ve built your business with years of hard work. You want an exit that maximizes your benefits: fair price, good tax treatment and a clean sale. Schema Partners has successfully represented sellers from pre-revenue through full maturity, from several million dollars of value to hundreds of millions, across many industries.</p>
+                    <p>We work with ownership to create a very defensible valuation scenario that takes into account all your tangible and intangible assets, as well as any synergies (cost savings) afforded the buyer. We can also provide marketing assistance, locate and evaluate potential buyers, manage due diligence and negotiate terms, as needed.</p>
+                </section>
+            </div>
         </main>
     )
 }

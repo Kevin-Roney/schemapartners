@@ -1,7 +1,17 @@
+.headerClose{
+    z-index: 1000;
+}
+
+.headerOpen{
+    height: 100vh;
+    z-index: 1000;
+}
+
 .headLogoContainer a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: white;
 }
 
@@ -10,6 +20,28 @@
     max-width: 20rem;
     min-width: 13rem;
     margin: auto;
+    margin-bottom: 1rem;
+}
+
+.subhead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ltgrey);
+    margin: 0;
+    padding: 1rem;
+}
+
+.subhead h2{
+    font-weight: 300;
+    margin: 0;
+    color: var(--mainblue);
+}
+
+.subhead h3{
+    color: white;
+    font-weight: 300;
+    padding-left: .5rem;
 }
 
 .navLinkList{
@@ -42,10 +74,6 @@
     background-color: var(--grey);
 }
 
-.headerOpen{
-    height: 100vh;
-}
-
 .navOpen{
     flex-grow: 1;
 }
@@ -68,6 +96,9 @@
         flex-direction: column;
         align-items: center;
         width: 90%;
+    }
+    .subhead{
+        display: none;
     }
 
     .menuOpen, .navToggle{
