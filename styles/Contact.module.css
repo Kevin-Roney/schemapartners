@@ -3,6 +3,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;  
+    flex-grow: 1;
+}
+
+.root a{
+    color:var(--mainblue);
+    text-decoration: underline;
+}
+
+.root a:hover{
+    color:var(--green);
 }
 
 .heading{
