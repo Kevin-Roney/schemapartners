@@ -1,0 +1,36 @@
+
+.root{  
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.homeSectionWrapper{
+    display: flex;
+    width: 75%;
+    max-width: 900px;
+    margin: 2rem;
+    gap:1.5rem;
+}
+
+.buySell{
+    background-color: rgba(195,198,201,.3);
+    padding: 1.2rem;
+}
+
+
+.title{
+    color: var(--mainblue);
+    font-weight: 900;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 600px) {
+    .root{
+        margin-top: 1.75rem;
+    }
+    .homeSectionWrapper{
+      display: flex;
+      flex-direction: column;
+    }
+}
