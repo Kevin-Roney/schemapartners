@@ -22,7 +22,6 @@ export default function Contact() {
             body: JSON.stringify(data),
         })
             .then((res) => {
-                console.log('Response received')
                 if (res.status === 200) {
                     router.push('/Thanks')
                 }
