@@ -39,14 +39,24 @@ a:hover{
 }
 
 ul {
-  list-style-type: none;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
-li{
-  font-size: .75rem;
+li:before {
+  content: "\200B";
 }
+
+blockquote{
+  font-style: italic;
+  font-size: .85rem;
+}
+
+blockquote p {
+  text-align: right;
+}
+
 
 h3{
   font-weight: 600;
@@ -76,6 +86,33 @@ footer{
 
 main{
   flex-grow: 1;
+}
+
+input, textarea{
+  margin-bottom: 1rem;
+  border: var(--ltblue) 1px solid;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+button{
+  margin: 1rem;
+  padding: 5px 1rem;
+  width: fit-content;
+  align-self: center;
+  font-family: inherit;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--mainblue);
+  color: white;
+  transition: all 200ms ease;
+  box-shadow: 2px 2px 3px var(--ltgrey);
+
+}
+
+button:hover{
+  background-color: var(--green);
+  box-shadow: 1px 1px var(--ltgrey);
 }
 
 @media (max-width: 600px) {
