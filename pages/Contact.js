@@ -21,7 +21,13 @@ export default function Contact() {
             method: 'post',
             body: JSON.stringify(data),
         })
-            .then(router.push('/Thanks'));
+            .then((res) => {
+                console.log('Response received')
+                if (res.status === 200) {
+                    router.push('/Thanks')
+                }
+                else router.push('/Oops')
+            })
     };
     return (
         <main className={styles.root}>
