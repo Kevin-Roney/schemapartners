@@ -17,6 +17,8 @@
 
 .heading{
     color: var(--mainblue);
+    margin-bottom: 5px;
+    margin-top: 2rem;
 }
 
 .paragraph{
@@ -25,8 +27,8 @@
 
 .form{
     width: 75%;
-    max-width: 600px;
-    margin: 2rem;
+    margin-top: 1rem;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
 }

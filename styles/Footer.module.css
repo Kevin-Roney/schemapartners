@@ -45,15 +45,25 @@
 }
 
 .dba{
+    display: flex;
+    flex-direction: column;
     font-weight: 300;
+    align-items: center;
+}
+
+.dba h3{
     color: white;
     margin-top: .5rem;
     font-size: .9rem;
 }
 
+.dba p{
+    margin: 0;
+}
+
 .dev{
-    font-size: .7rem;
-    opacity: .6;
+    font-size: .6rem;
+    opacity: .5;
 }
 
 @media (max-width: 700px) {
