@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <main >
+      <img className={styles.skyline} src='./ryan-manwiller-blue.jpg' alt='portland skyline' />
       <section className={styles.backgroundImg} >
         <div className={styles.homeSectionWrapper}>
           <section className={styles.aboutBlurb}>

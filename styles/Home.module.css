@@ -1,14 +1,15 @@
-
+.skyline{
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+}
 
 .backgroundImg{
   width: 100vw;
-  background-image: url('/backgroundImg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;  
+  background-color: white;
 }
 
 .homeSectionWrapper{
@@ -20,7 +21,7 @@
 }
 
 .aboutBlurb{
-  background-color: rgba(255, 255, 255, .65);
+  background-color: rgba(195,198,201,.3);
   padding: 1.2rem;
 }
 
@@ -31,10 +32,9 @@
 }
 
 .prep{
-  background-color: rgba(24, 112, 184, .65);
+  background-color: rgba(195,198,201,.3);
   padding: 1.2rem;
-  font-size: .9rem;
-  color: var(--ltgrey);
+  font-size: .85rem;
 }
 
 .taglinesWrapper{
