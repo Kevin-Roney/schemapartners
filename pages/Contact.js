@@ -31,8 +31,9 @@ export default function Contact() {
     return (
         <main className={styles.root}>
             <h2 className={styles.heading}>
-                Request a free consultation.
+                Let’s Start the Conversation
             </h2>
+            <p>Free Consultation</p>
             <form onSubmit={handleSubmit} className={styles.form}>
                 <label htmlFor="name">Name:</label>
                 <input
