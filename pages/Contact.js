@@ -49,7 +49,6 @@ export default function Contact() {
                     onChange={e => setEmail(e.target.value)}
                     required
 
-                //needs form validations
                 />
                 <label htmlFor="industry">Industry:</label>
                 <input
