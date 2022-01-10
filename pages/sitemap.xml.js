@@ -1,9 +1,4 @@
-import fs from "fs";
-
-const Sitemap = () => {
-
-    console.log(staticPages);
-};
+const Sitemap = () => { };
 
 export const getServerSideProps = ({ res }) => {
 
@@ -12,38 +7,32 @@ export const getServerSideProps = ({ res }) => {
         production: "https://https://www.schemapartners.com/",
     }[process.env.NODE_ENV];
 
-    const staticPages = fs
-        .readdirSync({
-            development: 'pages',
-            production: './pages',
-        }[process.env.NODE_ENV])
-        .filter((staticPage) => {
-            return ![
-                "_app.js",
-                "Oops.js",
-                "Thanks.js",
-                "api",
-                "sitemap.xml.js",
-            ].includes(staticPage);
-        })
-        .map((staticPagePath) => {
-            return `${baseUrl}/${staticPagePath.replace('.js', '')}`;
-        });
-
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-          ${staticPages
-            .map((url) => {
-                return `
-                <url>
-                  <loc>${url}</loc>
-                  <lastmod>${new Date().toISOString()}</lastmod>
-                  <changefreq>monthly</changefreq>
-                  <priority>1.0</priority>
-                </url>
-              `;
-            })
-            .join("")}
+            <url>
+                <loc>${baseUrl}/</loc>
+                <lastmod>${new Date().toISOString()}</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url>
+                <loc>${baseUrl}/Services</loc>
+                <lastmod>${new Date().toISOString()}</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url>
+                <loc>${baseUrl}/About</loc>
+                <lastmod>${new Date().toISOString()}</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url>
+                <loc>${baseUrl}/Contact</loc>
+                <lastmod>${new Date().toISOString()}</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+            </url>
         </urlset>
       `;
 
