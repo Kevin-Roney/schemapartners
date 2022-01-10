@@ -3,7 +3,7 @@ const Sitemap = () => { };
 export const getServerSideProps = ({ res }) => {
 
     const baseUrl = {
-        development: "http://localhost:3000",
+        development: "http://localhost:3000/",
         production: "https://https://www.schemapartners.com/",
     }[process.env.NODE_ENV];
 
