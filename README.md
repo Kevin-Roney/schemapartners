@@ -17,6 +17,6 @@ A Certified Value Analyst offering Mergers and Aquisitions Advising.
 - [X] Set up contact email form (next API) on contact page
 - [X] Incorporate field validations
 - [X] Style form 
-- [ ] Update email addressed to ed's  (send grid -> settings -> sender authentication)
+- [X] Update email addressed to ed's  (send grid -> settings -> sender authentication)
 - [ ] A11y check 
 - [ ] Replace this with an actual Readme! 

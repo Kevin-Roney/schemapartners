@@ -21,13 +21,19 @@ export default function Contact() {
             method: 'post',
             body: JSON.stringify(data),
         })
-            .then(router.push('/Thanks'));
+            .then((res) => {
+                if (res.status === 200) {
+                    router.push('/Thanks')
+                }
+                else router.push('/Oops')
+            })
     };
     return (
         <main className={styles.root}>
             <h2 className={styles.heading}>
-                Request a free consultation.
+                Let’s Start the Conversation
             </h2>
+            <p>Free Consultation</p>
             <form onSubmit={handleSubmit} className={styles.form}>
                 <label htmlFor="name">Name:</label>
                 <input
@@ -43,7 +49,6 @@ export default function Contact() {
                     onChange={e => setEmail(e.target.value)}
                     required
 
-                //needs form validations
                 />
                 <label htmlFor="industry">Industry:</label>
                 <input

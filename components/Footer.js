@@ -20,7 +20,7 @@ export default function Footer() {
                         <ul>
                             <li>Certified Valuation Analyst</li>
                             <li>M&A Advisor</li>
-                            <li>10+ Years of Experience</li>
+                            <li>Process Manager</li>
                         </ul>
                     </div>
                     <div className={styles.footerContactBlock}>
@@ -37,7 +37,10 @@ export default function Footer() {
                 </div>
             </div>
             <div className={styles.subFooter}>
-                <h3 className={styles.dba}>Edward Roney Consulting LLC.</h3>
+                <div className={styles.dba}>
+                    <h3>Schema Partners</h3>
+                    <p>Portland, OR</p>
+                </div>
                 <p className={styles.dev}>Web Design - <a href='https://www.katrinacloyd.com/' rel='noreferrer' target='_blank'>Katrina Cloyd</a>, 2021</p>
             </div>
         </footer>
