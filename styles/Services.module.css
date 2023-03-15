@@ -1,12 +1,14 @@
 
 .root{  
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
 
 .homeSectionWrapper{
     display: flex;
+    flex-direction: row;
     width: 75%;
     max-width: 900px;
     margin: 2rem;
@@ -23,6 +25,7 @@
     color: var(--mainblue);
     font-weight: 900;
     font-size: 1.25rem;
+    max-width: 380px;
 }
 
 @media (max-width: 600px) {
@@ -34,3 +37,33 @@
       flex-direction: column;
     }
 }
+
+.videoResponsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.videoResponsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.videoSectionWrapper{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    max-width: 900px;
+    margin: 2rem;
+    gap:1.5rem;
+}
+
+.videoSection{
+    background-color: rgba(195,198,201,.3);
+    padding: 1.2rem;
+    minimum-width:
+}
+
