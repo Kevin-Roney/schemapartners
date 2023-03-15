@@ -9,10 +9,10 @@ import styles from '../styles/globals.css'
 function MyApp({ Component, pageProps }) {
   return (
     <div className={styles.page} id='booger'>
-      <Script strategy="lazyOnload"
+      <Script id="gtm-script" strategy="lazyOnload"
         src={'https://www.googletagmanager.com/gtag/js?id=G-P4V5WSCDYP'}
       />
-      <Script strategy="lazyOnload">
+      <Script id='lazyLoad' strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
