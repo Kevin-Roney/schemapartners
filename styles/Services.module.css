@@ -52,18 +52,14 @@
     width: 100%;
     position: absolute;
 }
-.videoSectionWrapper{
-    display: flex;
-    flex-direction: row;
+
+.videoWrapper{
     width: 75%;
-    max-width: 900px;
-    margin: 2rem;
-    gap:1.5rem;
 }
 
 .videoSection{
     background-color: rgba(195,198,201,.3);
     padding: 1.2rem;
-    minimum-width:
+    margin-bottom: 2rem;
 }
 

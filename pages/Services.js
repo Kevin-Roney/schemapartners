@@ -23,16 +23,11 @@ export default function Services() {
                     <p>We work with ownership to create a very defensible valuation scenario that takes into account all your tangible and intangible assets, as well as any synergies (cost savings) afforded the buyer. We can also provide marketing assistance, locate and evaluate potential buyers, manage due diligence and negotiate terms, as needed.</p>
                 </section>
             </div>
-            <div className={styles.videoSectionWrapper}>
+            <div className={styles.videoWrapper}>
                 <section className={styles.videoSection}>
-                    <span className={styles.title}>Preparing for the Sale of a Business:</span>
+                    <span className={styles.title}>Preparing for the Sale of a Business</span>
                     <hr />
                     <YoutubeEmbed embedId='TPvbEH-hlmI' />
-                </section>
-                <section className={styles.videoSection}>
-                    <span className={styles.title}>Why a NACVA Certified Valuation Analyst:</span>
-                    <hr />
-                    <YoutubeEmbed embedId='3dSBTOvDK1A' />
                 </section>
             </div>
         </main>
