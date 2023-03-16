@@ -39,3 +39,28 @@
     filter: grayscale(20%);
     z-index: -1;
 }
+
+.videoResponsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.videoResponsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.videoWrapper{
+    width: 75%;
+}
+
+.videoSection{
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+}
+

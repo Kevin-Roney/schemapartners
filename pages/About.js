@@ -1,4 +1,5 @@
 import styles from '../styles/About.module.css'
+import YoutubeEmbed from '../components/YoutubeEmbed'
 
 export default function About() {
     return (
@@ -16,6 +17,13 @@ export default function About() {
                     <p>Ed is accredited as a Certified Valuation Analyst from the National Association of Certified Valuators and Analysts (NACVA).</p>
                 </div>
             </section>
+            <div className={styles.videoWrapper}>
+                <section className={styles.videoSection}>
+                    <span className={styles.title}>Why a NACVA Certified Valuation Analyst?</span>
+                    <hr />
+                    <YoutubeEmbed embedId='3dSBTOvDK1A' />
+                </section>
+            </div>
         </main>
     )
 }
